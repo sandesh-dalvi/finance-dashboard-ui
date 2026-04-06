@@ -45,7 +45,7 @@ export function AppProvider({ children }) {
   };
 
   const deleteTransaction = (id) => {
-    setTransactions((prev) => prev.filter((tx) => id !== id));
+    setTransactions((prev) => prev.filter((tx) => tx.id !== id));
   };
 
   const summary = useMemo(() => {
